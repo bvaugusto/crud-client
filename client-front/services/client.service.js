@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    angular.module('client')
+    angular.module('clientapp')
         .factory('ClientService', function ($resource) {
             return $resource(
                 'http://127.0.0.1:8000/api/client/:id',

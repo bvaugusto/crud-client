@@ -1,9 +1,11 @@
 (function(){
     'use strict';
 
-    angular.module('client',
+    angular.module('clientapp',
         [
             'ngRoute',
-            'ngResource'
+            'ngResource',
+            'toastr',
+            'angular.viacep'
         ]);
 })();

@@ -1,10 +1,11 @@
 (function(){
     'use strict';
-    angular.module('client')
+    angular.module('clientapp')
         .controller('HomeController', HomeController);
 
-    function HomeController(HomeService, $location, $routeParams) {
+    function HomeController(HomeService) {
         var vm = this;
+        vm.titlePage = 'Lista de Clientes';
         vm.homeService = HomeService.query();
     }
 })();

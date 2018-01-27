@@ -1,0 +1,86 @@
+<div>
+
+    <div class="page-title">
+        <div class="title_left"><h3>{{clientEdit.titlePage}}</h3></div>
+    </div>
+    <div class="">
+        <form class="" name="formEditClient" ng-submit="clientEdit.editClient(formEditClient)">
+            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <label class="control-label" for="name">Nome:</label>
+                <div class="">
+                    <input type="text" class="form-control " id="name" name="name"
+                           ng-model="clientEdit.clientService.name"
+                           ng-change="clientEdit.clientService.name" required>
+                </div>
+            </div>
+            <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <label for="birthday" class="control-label ">Data Nascimento:</label>
+                <div class="">
+                    <input type="date" class="form-control " id="birthday" name="birthday"
+                           ng-model="clientEdit.clientService.birthday"
+                           ng-change="clientEdit.clientService.birthday" required>
+                </div>
+            </div>
+            <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <label for="phone" class="control-label ">Telefone:</label>
+                <div class="">
+                    <input type="text" class="form-control " id="phone" name="phone"
+                           ng-model="clientEdit.clientService.phone"
+                           ng-change="clientEdit.clientService.phone" required>
+                </div>
+            </div>
+            <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <label for="zipcode" class="control-label ">CEP:</label>
+                <div class="">
+                    <input type="text" class="form-control" ng-blur="buscaCEP()" id="zipcode" name="zipcode"
+                           ng-model="clientEdit.clientService.zipcode"
+                           ng-change="clientEdit.clientService.zipcode">
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="padding-left form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <label for="street" class="control-label ">Logradouro:</label>
+                    <div class="">
+                        <input type="text" class="form-control" id="street" name="street"
+                               ng-model="clientEdit.clientService.street"
+                               ng-change="clientEdit.clientService.street">
+                    </div>
+                </div>
+
+                <div class="padding-left-m form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <label for="number" class="control-label ">Número:</label>
+                    <div class="">
+                        <input type="text" class="form-control" id="number" name="number"
+                               ng-model="clientEdit.clientService.number"
+                               ng-change="clientEdit.clientService.number">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="padding-left form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <label for="city" class="control-label ">Cidade:</label>
+                    <div class="">
+                        <input type="text" class="form-control" id="city" name="city"
+                               ng-model="clientEdit.clientService.city"
+                               ng-change="clientEdit.clientService.city">
+                    </div>
+                </div>
+
+                <div class="padding-left-m form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <label for="neighborhood" class="control-label ">Bairro:</label>
+                    <div class="">
+                        <input type="text" class="form-control" id="neighborhood" name="neighborhood"
+                               ng-model="clientEdit.clientService.neighborhood"
+                               ng-change="clientEdit.clientService.neighborhood">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <a href="/#"><button class="btn btn-primary" type="button">Cancelar</button></a>
+                <button type="submit" class="btn btn-success">Alterar</button>
+            </div>
+
+        </form>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+.starter-template {
+    margin-top: 15px;
+}
+.page-button {
+    text-align: right;
+}
+
+.padding-left {padding-left: 0}
+
+.page-button button { margin: 0 0 10px 0;}
+
+@media (max-width: 767px) {
+    .padding-left-m {
+        padding-left: 0
+    }
+}

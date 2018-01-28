@@ -4,6 +4,7 @@ public/storage
 storage/*.key
 vendor
 .idea
+.DS_Store
 .vagrant
 Homestead.json
 Homestead.yaml

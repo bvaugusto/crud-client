@@ -20,6 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 //Route Home
 Route::group(['prefix' => 'home'], function(){
     Route::get('', 'HomeController@index');
+    Route::delete('{client}', 'HomeController@destroy');
 });
 
 //Route Client

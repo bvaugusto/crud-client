@@ -80,6 +80,13 @@ class HomeController extends Controller
      */
     public function destroy($id)
     {
-        //
+        try {
+            $client = Client::destroy($id);
+
+            return response()->json(['success' => true, 'message' => 'Cliente removido com sucesso!']);
+
+        }catch (\Exception $exception){
+            return response()->json(['success' => false, 'message' => $exception->getMessage()]);
+        }
     }
 }
